@@ -22,9 +22,9 @@ class App extends React.Component {
         console.log(target);
         // создаем экземпляр наблюдателя
         var observer = new MutationObserver(function(mutations) {
-            console.log('mutation');
             mutations.forEach(function(mutation) {
                 console.log('%cmutation', 'color: blue', mutation.type);
+                console.log(mutation)
             });
         });
 
@@ -40,7 +40,7 @@ class App extends React.Component {
         observer.observe(target, config);
 
         // позже можно остановить наблюдение
-        observer.disconnect();
+        //observer.disconnect();
     };
 
     render() {

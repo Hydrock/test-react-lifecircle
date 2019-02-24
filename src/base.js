@@ -19,6 +19,30 @@ class Base extends React.Component {
             console.log('getDerivedStateFromProps action');
             nextProps.echoAC('');
         }
+
+        if (nextProps.echoCount > 5 && nextProps.echoCount < 7) {
+            console.log('20 times getDerivedStateFromProps action ');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+            nextProps.echoAC('');
+        }
         //console.log(nextProps);
         return null;
     };
